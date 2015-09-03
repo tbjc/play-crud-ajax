@@ -1,0 +1,11 @@
+@(element: String, formid:String)
+@if(element.equals("newModal")){
+	<h2>Crear distrito</h2>
+	<form action="#" class="row" id="@formid">
+}
+@if(element.equals("editModal")){
+	<h2>Editar distrito</h2>
+	<form action="#" class="row" id="@formid">
+}
+	@_form(element)
+</form>

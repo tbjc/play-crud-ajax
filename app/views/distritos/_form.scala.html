@@ -1,0 +1,25 @@
+	@(element: String)
+	<div class="twelve columns">
+		<div class="field">
+			@if(element.equals("editModal")){ 
+				<input type="hidden" id="id" name="id" />
+			}
+		  	<label class="inline" for="distrito">Distrito</label>
+		    <input class="input" type="text" id="distrito" name="distrito" @if(element.equals("editModal")){ data-edit="true"} placeholder="Distrito" />
+
+		</div>
+	</div>
+	<div class="twelve columns">
+		<div class="six columns text-right">
+			<div class="btn secondary medium">
+			@if(element.equals("editModal")){ 
+				<a href="#" class="editAction">Editar</a></div>
+			}
+			@if(element.equals("newModal")){ 
+				<a href="#" class="createAction">Crear</a></div>
+			}
+		</div>
+		<div class="six columns text-left">
+			<div class="btn primary medium"><a href="#" class="cancelAction">Cancelar</a></div>
+		</div>
+	</div>

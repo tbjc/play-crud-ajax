@@ -1,0 +1,566 @@
+/*
+We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+However, this blank file is available if you prefer
+*/
+
+
+/*.drop > a{
+  position: relative;
+}
+
+.drop > a:after{
+  content:"";
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #333;
+  border-right: 5px solid transparent;
+  z-index: 999;
+}
+
+.drop .clicked > a:hover:after{
+  content:"";
+  border-left: 5px solid transparent;
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+}
+*/
+.has-drop a{
+	position: relative !important; 
+}
+
+.has-drop a i {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 999;
+	margin-right: 0.0em !important;
+	padding: 0 !important;
+	-webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.has-drop a i:before {
+	margin-right: 0.0em !important;
+}
+
+
+
+.has-drop.clicked a > i{
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+
+.has-drop.clicked > .drop{
+  visibility: visible;
+	opacity: 1;
+  max-height: 800px;
+  overflow: visible;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	
+}
+
+
+.has-drop .drop{
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.has-drop .drop li{
+	padding: 0;
+	background: #2d2d2d;
+  border-bottom: 1px solid #282828;
+}
+
+
+.has-drop .drop li a {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  padding: 0.6em 1.3em 0.6em 2.0em;
+  outline: none;
+  box-shadow: none !important;
+  color: #f3efe0;
+  text-transform: capitalize;
+  text-shadow: 0 0 1px rgba(255,255,255,0.1);
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 0.7em;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+
+.has-drop .drop:first-child{
+	box-shadow: inset 0 -1px rgba(255,255,255,0.2) !important;
+}
+
+.has-drop .drop:last-child{
+	box-shadow: inset 0 -1px rgba(255,255,255,0.2) !important;
+}
+
+
+.pagination li{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.pagination li a{
+  margin-right: 5px;
+  border: 2px solid gray;
+  color: gray;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  padding: 0.3em 0.8em 0.5em 0.8em;
+}
+
+.pagination li.active a, .pagination li.hover a{
+  border: 2px solid #ababab;
+  color: #ababab;
+}
+
+
+.navbar ul li > a { 
+  display: block; 
+  padding: 0 16px; 
+  white-space: nowrap; 
+  color: white; 
+  text-shadow: none; 
+  height: 70px; 
+  line-height: 59px;  
+  font-size: 1rem; 
+  font-weight: bold;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+
+.navbar li .dropdown ul > li a { 
+  display: block; 
+  padding: 0 10px; 
+  color: white;
+  background: #4a4d4f; 
+  border-bottom: 1px solid #5d5d5d; 
+  text-shadow: none; 
+  height: 51px; 
+  line-height: 50px; 
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+
+.gumby-no-touch .navbar li .dropdown ul li a:hover{ 
+  color: white;
+  background: #8a8d8f; 
+}
+
+.navbar ul{
+  float: left;
+}
+
+
+
+.loginPanel{
+  margin: 0px !important;
+  padding: 0px !important;
+  vertical-align: middle !important;
+  text-align: center;
+  position: relative;
+}
+
+
+.loginPanel.lash::after{
+  content: "";
+  border-right:1px solid #8d8d8d;
+  position: absolute;
+  height: 20px;
+  top: 35%;
+  right: 0px;
+}
+
+.loginPanel:hover > a{
+  background: none !important;
+  color: #cdcdcd;
+}
+.loginPanel a:hover{
+  background: none !important;
+  color: #cdcdcd;
+}
+
+.loginPanel a{
+  height: 30px !important;
+  line-height: 25px !important; 
+  font-size: 0.7rem !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px 10px !important;
+}
+
+.modal .content{
+  top:13%;
+  min-height: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General grid styles */
+.cbp-ig-grid {
+  list-style: none;
+  padding: 0 0 50px 0;
+  margin: 0;
+}
+
+/* Clear floats */
+.cbp-ig-grid:before, 
+.cbp-ig-grid:after { 
+  content: " "; 
+  display: table; 
+}
+
+.cbp-ig-grid:after { 
+  clear: both; 
+}
+
+/* grid item */
+.cbp-ig-grid li {
+  width: 33%;
+  float: left;
+  height: 350px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+.cbp-ig-grid li:nth-child(-n+3){
+  border-top: none;
+}
+
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+  box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+.cbp-ig-grid li > a {
+  display: block;
+  height: 100%;
+  color: gray;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+.cbp-ig-icon {
+  padding: 30px 0 0 0;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.cbp-ig-icon:before {
+  font-family: 'Ionicons';
+  font-size: 10em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cbp-ig-icon-shoe:before {
+  content: "\f445";
+}
+
+.cbp-ig-icon-ribbon:before {
+  content: "\f342";
+}
+
+.cbp-ig-icon-milk:before {
+  content: "\f415";
+}
+
+.cbp-ig-icon-whippy:before {
+  content: "\f2a4";
+}
+
+.cbp-ig-icon-spectacles:before {
+  content: "\f2e3";
+}
+
+.cbp-ig-icon-doumbek:before {
+  content: "\f416";
+}
+
+/* title element */
+.cbp-ig-grid .cbp-ig-title {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 0 0;
+  font-size: 1.5em;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-title:before {
+  content: '';
+  position: absolute;
+  background: gray;
+  width: 160px;
+  height: 6px;
+  top: 0px;
+  left: 50%;
+  margin: -10px 0 0 -80px;
+  -webkit-transition: margin-top 0.2s; /* top or translate does not seem to work in Firefox */
+  -moz-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-category {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transform: translateY(10px);
+  -moz-transform: -moz-translateY(10px);
+  -ms-transform: -ms-translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  -webkit-transition: transform 0.3s, opacity 0.2s;
+}
+
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* Hover styles */
+
+.cbp-ig-grid li > a:hover {
+  background: gray;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  color: #fff;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+  background: #fff;
+  margin-top: 80px;
+}
+
+
+
+
+
+
+.wrapper-dropdown-5 {
+    /* Size & position */
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #fff transparent;
+}
+
+.wrapper-dropdown-5 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+    padding: 0 1px ;
+}
+
+.wrapper-dropdown-5 .dropdown li input {
+    display: block;
+    padding: 1px 0;
+    transition: all 0.3s ease-out;
+    color:#666;
+    text-shadow:none;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+    border: none;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover input {
+    color: #57a9d9;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+    border-radius: 5px 5px 0 0;
+    background: #4cbeff;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+    border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+}
+
+
+
+@media screen and (max-width: 62.75em) {
+  .cbp-ig-grid li {
+    width: 50%;
+  }
+
+  /* reset the grid lines */
+  .cbp-ig-grid li:nth-child(-n+3){
+    border-top: 1px solid #ddd;
+  }
+
+  .cbp-ig-grid li:nth-child(3n-1),
+  .cbp-ig-grid li:nth-child(3n-2) {
+    box-shadow: none;
+  }
+
+  .cbp-ig-grid li:nth-child(-n+2){
+    border-top: none;
+  }
+
+  .cbp-ig-grid li:nth-child(2n-1) {
+    box-shadow: 1px 0 0 #ddd;
+  }
+}
+
+@media screen and (max-width: 41.6em) { 
+  .cbp-ig-grid li {
+    width: 100%;
+  }
+
+  .cbp-ig-grid li:nth-child(-n+2){
+    border-top: 1px solid #ddd;
+  }
+
+  .cbp-ig-grid li:nth-child(2n-1) {
+    box-shadow: none
+  }
+
+  .cbp-ig-grid li:first-child {
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 25em) { 
+  .cbp-ig-grid {
+    font-size: 80%;
+  }
+
+  .cbp-ig-grid .cbp-ig-category {
+    margin-top: 20px;
+  }
+}
+
